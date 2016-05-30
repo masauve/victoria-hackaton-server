@@ -1,1 +1,1 @@
-{"contact":{"name":"Paul","phone":"5551112222","profession":"Solutions Architect","id":1},"contact":{"name":"Alfredo","phone":"5552221111","profession":"Solutions Architect","id":2},"contact":{"name":"Jamie","phone":"2225551111","profession":"Account Rep","id":3},"contact":{"name":"Joseph","phone":"5551111111","profession":"Software Developer","id":"5"}}
+{"data":[["Paul","5551112222","Solutions Architect","1"],["Martin","5552221111","Solutions Architect","2"],["Jamie","4442221111","Account Representative","3"],["Todd","5551111111","Software Developer","5"]]}

@@ -14,7 +14,7 @@ app.get('/contact/:id', function (req, res) {
    // First read existing users.
    fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
        users = JSON.parse( data );
-       var user = data[req.params.id]
+       var user = users.data[req.params.id];
        console.log( user );
        res.end( JSON.stringify(user));
    });
@@ -24,9 +24,8 @@ app.get('/addUser/:id/:name/:phone/:profession', function (req, res) {
    // First read existing users.
    fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
-       var newUser = JSON.parse("{ \"name\" : \""+req.params.name+"\",\"phone\":\""+req.params.phone+"\",\"profession\":\""+req.params.profession+"\",\"id\":\""+req.params.id+"\"}");
-
-       data["contact"+req.params.id] = newUser;
+       var newUser = JSON.parse("[\""+req.params.name+"\",\""+req.params.phone+"\",\""+req.params.profession+"\",\""+req.params.id+"\"]");
+       data.data.push(newUser);
        console.log( data );
        fs.writeFile( __dirname + "/" + "users.json", JSON.stringify(data));
        res.end( "contact added");
