@@ -1,15 +1,1 @@
-{
-  "data": [
-    [
-      "Martin Sauve",
-      "Solution Architect",
-      "5142208113",
-      "1"
-    ],
-    [
-      "Paul Turnbull",
-      "Solution Architect",
-      "5551112222",
-      "2"
-    ]
-  ]}
+{"contact":{"name":"Paul","phone":"5551112222","profession":"Solutions Architect","id":1},"contact":{"name":"Alfredo","phone":"5552221111","profession":"Solutions Architect","id":2},"contact":{"name":"Jamie","phone":"2225551111","profession":"Account Rep","id":3},"contact":{"name":"Joseph","phone":"5551111111","profession":"Software Developer","id":"5"}}

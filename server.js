@@ -14,7 +14,7 @@ app.get('/contact/:id', function (req, res) {
    // First read existing users.
    fs.readFile( __dirname + "/" + "users.json", 'utf8', function (err, data) {
        users = JSON.parse( data );
-       var user = users["contact" + req.params.id]
+       var user = data[req.params.id]
        console.log( user );
        res.end( JSON.stringify(user));
    });
